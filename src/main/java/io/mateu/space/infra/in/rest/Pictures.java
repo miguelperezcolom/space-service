@@ -20,17 +20,39 @@ final class Pictures {
         d.sourceUrl());
   }
 
-  /** A field the body leaves out (null) keeps its value: a form editing facts must not wipe photos. */
+  /**
+   * A field the body leaves out (null) keeps its value: a form editing facts must not wipe photos.
+   * A new {@code image} without its sizes brings them along — derived from it ({@link #size}) — so a
+   * form that only changes the photo does not leave the old thumbnail and large version behind.
+   */
   static Picture merge(Picture current, String image, String imageLarge, String thumbnail,
       String imageTitle, String imageCredit, String sourceUrl) {
     Picture p = current == null ? new Picture() : current;
+    boolean newImage = image != null && !java.util.Objects.equals(blankToNull(image), p.getImage());
     if (image != null) p.setImage(blankToNull(image));
+    if (newImage) {
+      if (imageLarge == null) p.setImageLarge(size(p.getImage(), "large"));
+      if (thumbnail == null) p.setThumbnail(size(p.getImage(), "thumb"));
+    }
     if (imageLarge != null) p.setImageLarge(blankToNull(imageLarge));
     if (thumbnail != null) p.setThumbnail(blankToNull(thumbnail));
     if (imageTitle != null) p.setImageTitle(blankToNull(imageTitle));
     if (imageCredit != null) p.setImageCredit(blankToNull(imageCredit));
     if (sourceUrl != null) p.setSourceUrl(blankToNull(sourceUrl));
     return p;
+  }
+
+  private static final java.util.regex.Pattern NASA_SIZE =
+      java.util.regex.Pattern.compile("~(orig|large|medium|small|thumb)(\\.[a-z]+)$");
+
+  /**
+   * The same picture at another size: the NASA Image Library names its renditions {@code
+   * ~thumb/~small/~medium/~large/~orig}; any other URL is its own only size.
+   */
+  static String size(String url, String size) {
+    if (url == null) return null;
+    var m = NASA_SIZE.matcher(url);
+    return m.find() ? m.replaceFirst("~" + size + "$2") : url;
   }
 
   private static String blankToNull(String s) {
