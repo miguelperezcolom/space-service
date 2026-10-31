@@ -1,0 +1,502 @@
+[
+ {
+  "missionId": 1,
+  "launchDate": "1961-05-05",
+  "launchTimeUtc": null,
+  "vehicle": "Mercury-Redstone Launch Vehicle",
+  "siteId": 1,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 1
+ },
+ {
+  "missionId": 2,
+  "launchDate": "1962-02-20",
+  "launchTimeUtc": null,
+  "vehicle": "SM-65D Atlas",
+  "siteId": 2,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 2
+ },
+ {
+  "missionId": 3,
+  "launchDate": "1965-06-03",
+  "launchTimeUtc": null,
+  "vehicle": "Titan II GLV",
+  "siteId": 3,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 3
+ },
+ {
+  "missionId": 4,
+  "launchDate": "1966-03-16",
+  "launchTimeUtc": null,
+  "vehicle": "Titan II GLV",
+  "siteId": 3,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 4
+ },
+ {
+  "missionId": 5,
+  "launchDate": "1968-12-21",
+  "launchTimeUtc": null,
+  "vehicle": "Saturn V",
+  "siteId": 4,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 5
+ },
+ {
+  "missionId": 6,
+  "launchDate": "1969-07-16",
+  "launchTimeUtc": "13:32",
+  "vehicle": "Saturn V",
+  "siteId": 4,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 6
+ },
+ {
+  "missionId": 7,
+  "launchDate": "1970-04-11",
+  "launchTimeUtc": "19:13",
+  "vehicle": "Saturn V",
+  "siteId": 4,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 7
+ },
+ {
+  "missionId": 8,
+  "launchDate": "1971-07-26",
+  "launchTimeUtc": null,
+  "vehicle": "Saturn V",
+  "siteId": 4,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 8
+ },
+ {
+  "missionId": 9,
+  "launchDate": "1972-12-07",
+  "launchTimeUtc": null,
+  "vehicle": "Saturn V",
+  "siteId": 4,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 9
+ },
+ {
+  "missionId": 26,
+  "launchDate": "1973-03-03",
+  "launchTimeUtc": "01:49",
+  "vehicle": "Atlas SLV-3C Centaur-D",
+  "siteId": 6,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 10
+ },
+ {
+  "missionId": 10,
+  "launchDate": "1973-05-25",
+  "launchTimeUtc": null,
+  "vehicle": "Saturn IB",
+  "siteId": 5,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 11
+ },
+ {
+  "missionId": 27,
+  "launchDate": "1975-08-20",
+  "launchTimeUtc": "21:22",
+  "vehicle": "Titan IIIE",
+  "siteId": 7,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 12
+ },
+ {
+  "missionId": 29,
+  "launchDate": "1977-08-20",
+  "launchTimeUtc": "14:29",
+  "vehicle": "Titan IIIE",
+  "siteId": 7,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 13
+ },
+ {
+  "missionId": 28,
+  "launchDate": "1977-09-05",
+  "launchTimeUtc": "12:56",
+  "vehicle": "Titan IIIE",
+  "siteId": 7,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 14
+ },
+ {
+  "missionId": 11,
+  "launchDate": "1981-04-12",
+  "launchTimeUtc": null,
+  "vehicle": "Space Shuttle",
+  "siteId": 4,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 15
+ },
+ {
+  "missionId": 12,
+  "launchDate": "1983-06-18",
+  "launchTimeUtc": null,
+  "vehicle": "Space Shuttle",
+  "siteId": 4,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 16
+ },
+ {
+  "missionId": 13,
+  "launchDate": "1984-02-03",
+  "launchTimeUtc": null,
+  "vehicle": "Space Shuttle",
+  "siteId": 4,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 17
+ },
+ {
+  "missionId": 14,
+  "launchDate": "1986-01-28",
+  "launchTimeUtc": "16:38",
+  "vehicle": "Space Shuttle",
+  "siteId": 5,
+  "outcome": "FAILURE",
+  "notes": "Lost 73 seconds after liftoff",
+  "id": 18
+ },
+ {
+  "missionId": 30,
+  "launchDate": "1989-10-18",
+  "launchTimeUtc": "16:53",
+  "vehicle": "Space Shuttle",
+  "siteId": 5,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 19
+ },
+ {
+  "missionId": 15,
+  "launchDate": "1990-04-24",
+  "launchTimeUtc": "12:33",
+  "vehicle": "Space Shuttle",
+  "siteId": 5,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 20
+ },
+ {
+  "missionId": 16,
+  "launchDate": "1993-12-02",
+  "launchTimeUtc": null,
+  "vehicle": "Space Shuttle",
+  "siteId": 5,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 21
+ },
+ {
+  "missionId": 31,
+  "launchDate": "1996-12-04",
+  "launchTimeUtc": "06:58",
+  "vehicle": "Delta II",
+  "siteId": 8,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 22
+ },
+ {
+  "missionId": 32,
+  "launchDate": "1997-10-15",
+  "launchTimeUtc": "08:43",
+  "vehicle": "Titan IV",
+  "siteId": 9,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 23
+ },
+ {
+  "missionId": 17,
+  "launchDate": "1998-10-29",
+  "launchTimeUtc": null,
+  "vehicle": "Space Shuttle",
+  "siteId": 5,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 24
+ },
+ {
+  "missionId": 20,
+  "launchDate": "2000-10-31",
+  "launchTimeUtc": "07:52",
+  "vehicle": "Soyuz-U",
+  "siteId": 15,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 25
+ },
+ {
+  "missionId": 18,
+  "launchDate": "2003-01-16",
+  "launchTimeUtc": null,
+  "vehicle": "Space Shuttle",
+  "siteId": 4,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 26
+ },
+ {
+  "missionId": 33,
+  "launchDate": "2003-06-10",
+  "launchTimeUtc": "17:58",
+  "vehicle": "Delta II",
+  "siteId": 10,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 27
+ },
+ {
+  "missionId": 34,
+  "launchDate": "2003-07-08",
+  "launchTimeUtc": "03:18",
+  "vehicle": "Delta II",
+  "siteId": 8,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 28
+ },
+ {
+  "missionId": 54,
+  "launchDate": "2004-08-03",
+  "launchTimeUtc": "06:15",
+  "vehicle": "Delta II",
+  "siteId": 8,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 29
+ },
+ {
+  "missionId": 35,
+  "launchDate": "2006-01-19",
+  "launchTimeUtc": "19:00",
+  "vehicle": "Atlas V 551",
+  "siteId": 7,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 30
+ },
+ {
+  "missionId": 36,
+  "launchDate": "2009-03-07",
+  "launchTimeUtc": "03:49",
+  "vehicle": "Delta II",
+  "siteId": 8,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 31
+ },
+ {
+  "missionId": 51,
+  "launchDate": "2009-06-18",
+  "launchTimeUtc": "21:32",
+  "vehicle": "Atlas V 401",
+  "siteId": 7,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 32
+ },
+ {
+  "missionId": 19,
+  "launchDate": "2011-07-08",
+  "launchTimeUtc": null,
+  "vehicle": "Space Shuttle",
+  "siteId": 4,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 33
+ },
+ {
+  "missionId": 38,
+  "launchDate": "2011-08-05",
+  "launchTimeUtc": "16:25",
+  "vehicle": "Atlas V 551",
+  "siteId": 7,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 34
+ },
+ {
+  "missionId": 37,
+  "launchDate": "2011-11-26",
+  "launchTimeUtc": "15:02",
+  "vehicle": "Atlas V 541",
+  "siteId": 7,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 35
+ },
+ {
+  "missionId": 39,
+  "launchDate": "2016-09-08",
+  "launchTimeUtc": "23:05",
+  "vehicle": "Atlas V 411",
+  "siteId": 7,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 36
+ },
+ {
+  "missionId": 42,
+  "launchDate": "2018-04-18",
+  "launchTimeUtc": "22:51",
+  "vehicle": "Falcon 9 Full Thrust",
+  "siteId": 9,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 37
+ },
+ {
+  "missionId": 40,
+  "launchDate": "2018-05-05",
+  "launchTimeUtc": "11:05",
+  "vehicle": "Atlas V 401",
+  "siteId": 11,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 38
+ },
+ {
+  "missionId": 41,
+  "launchDate": "2018-08-12",
+  "launchTimeUtc": "07:31",
+  "vehicle": "Delta IV Heavy",
+  "siteId": 12,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 39
+ },
+ {
+  "missionId": 21,
+  "launchDate": "2020-05-30",
+  "launchTimeUtc": "19:22",
+  "vehicle": "Falcon 9 Block 5",
+  "siteId": 4,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 40
+ },
+ {
+  "missionId": 43,
+  "launchDate": "2020-07-30",
+  "launchTimeUtc": "11:50",
+  "vehicle": "Atlas V 541",
+  "siteId": 7,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 41
+ },
+ {
+  "missionId": 22,
+  "launchDate": "2020-11-16",
+  "launchTimeUtc": "00:27",
+  "vehicle": "Falcon 9 Block 5",
+  "siteId": 4,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 42
+ },
+ {
+  "missionId": 46,
+  "launchDate": "2021-10-16",
+  "launchTimeUtc": "09:34",
+  "vehicle": "Atlas V 401",
+  "siteId": 7,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 43
+ },
+ {
+  "missionId": 45,
+  "launchDate": "2021-11-24",
+  "launchTimeUtc": "06:21",
+  "vehicle": "Falcon 9 Block 5",
+  "siteId": 13,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 44
+ },
+ {
+  "missionId": 50,
+  "launchDate": "2021-12-25",
+  "launchTimeUtc": "12:20",
+  "vehicle": "Ariane 5 ECA",
+  "siteId": 14,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 45
+ },
+ {
+  "missionId": 23,
+  "launchDate": "2022-11-16",
+  "launchTimeUtc": "06:47",
+  "vehicle": "Space Launch System Block 1",
+  "siteId": 5,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 46
+ },
+ {
+  "missionId": 47,
+  "launchDate": "2023-10-13",
+  "launchTimeUtc": "14:19",
+  "vehicle": "Falcon Heavy",
+  "siteId": 4,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 47
+ },
+ {
+  "missionId": 48,
+  "launchDate": "2024-10-14",
+  "launchTimeUtc": "16:06",
+  "vehicle": "Falcon Heavy",
+  "siteId": 4,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 48
+ },
+ {
+  "missionId": 24,
+  "launchDate": "2026-04-01",
+  "launchTimeUtc": "22:35",
+  "vehicle": "Space Launch System Block 1",
+  "siteId": 5,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 49
+ },
+ {
+  "missionId": 53,
+  "launchDate": "2026-08-30",
+  "launchTimeUtc": "11:25",
+  "vehicle": "Falcon Heavy",
+  "siteId": 4,
+  "outcome": "SUCCESS",
+  "notes": null,
+  "id": 50
+ }
+]

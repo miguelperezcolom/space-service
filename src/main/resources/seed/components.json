@@ -1,0 +1,968 @@
+[
+ {
+  "id": 1,
+  "spacecraftId": 26,
+  "parentId": null,
+  "name": "Science payload",
+  "kind": "SUBSYSTEM"
+ },
+ {
+  "id": 2,
+  "spacecraftId": 26,
+  "parentId": 1,
+  "name": "ChemCam",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 3,
+  "spacecraftId": 26,
+  "parentId": 1,
+  "name": "Mastcam",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 4,
+  "spacecraftId": 26,
+  "parentId": 1,
+  "name": "MAHLI",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 5,
+  "spacecraftId": 26,
+  "parentId": 1,
+  "name": "APXS",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 6,
+  "spacecraftId": 26,
+  "parentId": 1,
+  "name": "CheMin",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 7,
+  "spacecraftId": 26,
+  "parentId": 1,
+  "name": "SAM",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 8,
+  "spacecraftId": 26,
+  "parentId": 1,
+  "name": "RAD",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 9,
+  "spacecraftId": 26,
+  "parentId": 1,
+  "name": "DAN",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 10,
+  "spacecraftId": 26,
+  "parentId": 1,
+  "name": "REMS",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 11,
+  "spacecraftId": 26,
+  "parentId": 1,
+  "name": "MARDI",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 12,
+  "spacecraftId": 26,
+  "parentId": null,
+  "name": "Mobility",
+  "kind": "SUBSYSTEM"
+ },
+ {
+  "id": 13,
+  "spacecraftId": 26,
+  "parentId": 12,
+  "name": "Rocker-bogie suspension",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 14,
+  "spacecraftId": 26,
+  "parentId": 12,
+  "name": "Six aluminium wheels",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 15,
+  "spacecraftId": 26,
+  "parentId": null,
+  "name": "Power",
+  "kind": "SUBSYSTEM"
+ },
+ {
+  "id": 16,
+  "spacecraftId": 26,
+  "parentId": 15,
+  "name": "MMRTG",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 17,
+  "spacecraftId": 26,
+  "parentId": null,
+  "name": "Communications",
+  "kind": "SUBSYSTEM"
+ },
+ {
+  "id": 18,
+  "spacecraftId": 26,
+  "parentId": 17,
+  "name": "High-gain antenna",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 19,
+  "spacecraftId": 26,
+  "parentId": 17,
+  "name": "UHF antenna",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 20,
+  "spacecraftId": 26,
+  "parentId": null,
+  "name": "Engineering cameras",
+  "kind": "SUBSYSTEM"
+ },
+ {
+  "id": 21,
+  "spacecraftId": 26,
+  "parentId": 20,
+  "name": "Hazcams",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 22,
+  "spacecraftId": 26,
+  "parentId": 20,
+  "name": "Navcams",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 23,
+  "spacecraftId": 32,
+  "parentId": null,
+  "name": "Science payload",
+  "kind": "SUBSYSTEM"
+ },
+ {
+  "id": 24,
+  "spacecraftId": 32,
+  "parentId": 23,
+  "name": "Mastcam-Z",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 25,
+  "spacecraftId": 32,
+  "parentId": 23,
+  "name": "SuperCam",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 26,
+  "spacecraftId": 32,
+  "parentId": 23,
+  "name": "PIXL",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 27,
+  "spacecraftId": 32,
+  "parentId": 23,
+  "name": "SHERLOC",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 28,
+  "spacecraftId": 32,
+  "parentId": 23,
+  "name": "WATSON",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 29,
+  "spacecraftId": 32,
+  "parentId": 23,
+  "name": "MOXIE",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 30,
+  "spacecraftId": 32,
+  "parentId": 23,
+  "name": "MEDA",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 31,
+  "spacecraftId": 32,
+  "parentId": 23,
+  "name": "RIMFAX",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 32,
+  "spacecraftId": 32,
+  "parentId": null,
+  "name": "Sample handling",
+  "kind": "SUBSYSTEM"
+ },
+ {
+  "id": 33,
+  "spacecraftId": 32,
+  "parentId": 32,
+  "name": "Robotic arm",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 34,
+  "spacecraftId": 32,
+  "parentId": 32,
+  "name": "Coring drill",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 35,
+  "spacecraftId": 32,
+  "parentId": 32,
+  "name": "Sample caching system",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 36,
+  "spacecraftId": 32,
+  "parentId": null,
+  "name": "Power",
+  "kind": "SUBSYSTEM"
+ },
+ {
+  "id": 37,
+  "spacecraftId": 32,
+  "parentId": 36,
+  "name": "MMRTG",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 38,
+  "spacecraftId": 32,
+  "parentId": null,
+  "name": "Communications",
+  "kind": "SUBSYSTEM"
+ },
+ {
+  "id": 39,
+  "spacecraftId": 32,
+  "parentId": 38,
+  "name": "High-gain antenna",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 40,
+  "spacecraftId": 32,
+  "parentId": 38,
+  "name": "UHF antenna",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 41,
+  "spacecraftId": 39,
+  "parentId": null,
+  "name": "Optical Telescope Element",
+  "kind": "SUBSYSTEM"
+ },
+ {
+  "id": 42,
+  "spacecraftId": 39,
+  "parentId": 41,
+  "name": "Primary mirror (18 segments)",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 43,
+  "spacecraftId": 39,
+  "parentId": 41,
+  "name": "Secondary mirror",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 44,
+  "spacecraftId": 39,
+  "parentId": null,
+  "name": "Integrated Science Instrument Module",
+  "kind": "SUBSYSTEM"
+ },
+ {
+  "id": 45,
+  "spacecraftId": 39,
+  "parentId": 44,
+  "name": "NIRCam",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 46,
+  "spacecraftId": 39,
+  "parentId": 44,
+  "name": "NIRSpec",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 47,
+  "spacecraftId": 39,
+  "parentId": 44,
+  "name": "MIRI",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 48,
+  "spacecraftId": 39,
+  "parentId": 44,
+  "name": "FGS/NIRISS",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 49,
+  "spacecraftId": 39,
+  "parentId": null,
+  "name": "Spacecraft element",
+  "kind": "SUBSYSTEM"
+ },
+ {
+  "id": 50,
+  "spacecraftId": 39,
+  "parentId": 49,
+  "name": "Sunshield (5 layers)",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 51,
+  "spacecraftId": 39,
+  "parentId": 49,
+  "name": "Spacecraft bus",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 52,
+  "spacecraftId": 38,
+  "parentId": null,
+  "name": "Science instruments",
+  "kind": "SUBSYSTEM"
+ },
+ {
+  "id": 53,
+  "spacecraftId": 38,
+  "parentId": 52,
+  "name": "Wide Field Camera 3",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 54,
+  "spacecraftId": 38,
+  "parentId": 52,
+  "name": "Advanced Camera for Surveys",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 55,
+  "spacecraftId": 38,
+  "parentId": 52,
+  "name": "Cosmic Origins Spectrograph",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 56,
+  "spacecraftId": 38,
+  "parentId": 52,
+  "name": "STIS",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 57,
+  "spacecraftId": 38,
+  "parentId": 52,
+  "name": "NICMOS",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 58,
+  "spacecraftId": 38,
+  "parentId": 52,
+  "name": "Fine Guidance Sensors",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 59,
+  "spacecraftId": 38,
+  "parentId": null,
+  "name": "Optical Telescope Assembly",
+  "kind": "SUBSYSTEM"
+ },
+ {
+  "id": 60,
+  "spacecraftId": 38,
+  "parentId": 59,
+  "name": "Primary mirror (2.4 m)",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 61,
+  "spacecraftId": 38,
+  "parentId": 59,
+  "name": "Secondary mirror",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 62,
+  "spacecraftId": 38,
+  "parentId": null,
+  "name": "Power",
+  "kind": "SUBSYSTEM"
+ },
+ {
+  "id": 63,
+  "spacecraftId": 38,
+  "parentId": 62,
+  "name": "Solar arrays",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 64,
+  "spacecraftId": 38,
+  "parentId": 62,
+  "name": "Nickel-hydrogen batteries",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 65,
+  "spacecraftId": 21,
+  "parentId": null,
+  "name": "Optical remote sensing",
+  "kind": "SUBSYSTEM"
+ },
+ {
+  "id": 66,
+  "spacecraftId": 21,
+  "parentId": 65,
+  "name": "ISS (Imaging Science Subsystem)",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 67,
+  "spacecraftId": 21,
+  "parentId": 65,
+  "name": "VIMS",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 68,
+  "spacecraftId": 21,
+  "parentId": 65,
+  "name": "CIRS",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 69,
+  "spacecraftId": 21,
+  "parentId": 65,
+  "name": "UVIS",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 70,
+  "spacecraftId": 21,
+  "parentId": null,
+  "name": "Fields, particles and waves",
+  "kind": "SUBSYSTEM"
+ },
+ {
+  "id": 71,
+  "spacecraftId": 21,
+  "parentId": 70,
+  "name": "CAPS",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 72,
+  "spacecraftId": 21,
+  "parentId": 70,
+  "name": "MAG",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 73,
+  "spacecraftId": 21,
+  "parentId": 70,
+  "name": "CDA",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 74,
+  "spacecraftId": 21,
+  "parentId": 70,
+  "name": "INMS",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 75,
+  "spacecraftId": 21,
+  "parentId": 70,
+  "name": "RPWS",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 76,
+  "spacecraftId": 21,
+  "parentId": 70,
+  "name": "MIMI",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 77,
+  "spacecraftId": 21,
+  "parentId": null,
+  "name": "Microwave remote sensing",
+  "kind": "SUBSYSTEM"
+ },
+ {
+  "id": 78,
+  "spacecraftId": 21,
+  "parentId": 77,
+  "name": "RADAR",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 79,
+  "spacecraftId": 21,
+  "parentId": 77,
+  "name": "RSS",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 80,
+  "spacecraftId": 21,
+  "parentId": null,
+  "name": "Power",
+  "kind": "SUBSYSTEM"
+ },
+ {
+  "id": 81,
+  "spacecraftId": 21,
+  "parentId": 80,
+  "name": "Three RTGs",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 82,
+  "spacecraftId": 21,
+  "parentId": null,
+  "name": "Huygens probe",
+  "kind": "SUBSYSTEM"
+ },
+ {
+  "id": 83,
+  "spacecraftId": 21,
+  "parentId": 82,
+  "name": "DISR",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 84,
+  "spacecraftId": 21,
+  "parentId": 82,
+  "name": "HASI",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 85,
+  "spacecraftId": 21,
+  "parentId": 82,
+  "name": "GCMS",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 86,
+  "spacecraftId": 21,
+  "parentId": 82,
+  "name": "ACP",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 87,
+  "spacecraftId": 21,
+  "parentId": 82,
+  "name": "DWE",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 88,
+  "spacecraftId": 21,
+  "parentId": 82,
+  "name": "SSP",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 89,
+  "spacecraftId": 17,
+  "parentId": null,
+  "name": "Science instruments",
+  "kind": "SUBSYSTEM"
+ },
+ {
+  "id": 90,
+  "spacecraftId": 17,
+  "parentId": 89,
+  "name": "Imaging Science System",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 91,
+  "spacecraftId": 17,
+  "parentId": 89,
+  "name": "IRIS",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 92,
+  "spacecraftId": 17,
+  "parentId": 89,
+  "name": "UVS",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 93,
+  "spacecraftId": 17,
+  "parentId": 89,
+  "name": "PPS",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 94,
+  "spacecraftId": 17,
+  "parentId": 89,
+  "name": "CRS",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 95,
+  "spacecraftId": 17,
+  "parentId": 89,
+  "name": "LECP",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 96,
+  "spacecraftId": 17,
+  "parentId": 89,
+  "name": "MAG",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 97,
+  "spacecraftId": 17,
+  "parentId": 89,
+  "name": "PLS",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 98,
+  "spacecraftId": 17,
+  "parentId": 89,
+  "name": "PRA",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 99,
+  "spacecraftId": 17,
+  "parentId": 89,
+  "name": "PWS",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 100,
+  "spacecraftId": 17,
+  "parentId": null,
+  "name": "Communications",
+  "kind": "SUBSYSTEM"
+ },
+ {
+  "id": 101,
+  "spacecraftId": 17,
+  "parentId": 100,
+  "name": "High-gain antenna (3.7 m)",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 102,
+  "spacecraftId": 17,
+  "parentId": 100,
+  "name": "Golden Record",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 103,
+  "spacecraftId": 17,
+  "parentId": null,
+  "name": "Power",
+  "kind": "SUBSYSTEM"
+ },
+ {
+  "id": 104,
+  "spacecraftId": 17,
+  "parentId": 103,
+  "name": "Three RTGs",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 105,
+  "spacecraftId": 24,
+  "parentId": null,
+  "name": "Science payload",
+  "kind": "SUBSYSTEM"
+ },
+ {
+  "id": 106,
+  "spacecraftId": 24,
+  "parentId": 105,
+  "name": "Ralph",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 107,
+  "spacecraftId": 24,
+  "parentId": 105,
+  "name": "Alice",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 108,
+  "spacecraftId": 24,
+  "parentId": 105,
+  "name": "LORRI",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 109,
+  "spacecraftId": 24,
+  "parentId": 105,
+  "name": "SWAP",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 110,
+  "spacecraftId": 24,
+  "parentId": 105,
+  "name": "PEPSSI",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 111,
+  "spacecraftId": 24,
+  "parentId": 105,
+  "name": "Student Dust Counter",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 112,
+  "spacecraftId": 24,
+  "parentId": 105,
+  "name": "REX",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 113,
+  "spacecraftId": 24,
+  "parentId": null,
+  "name": "Power",
+  "kind": "SUBSYSTEM"
+ },
+ {
+  "id": 114,
+  "spacecraftId": 24,
+  "parentId": 113,
+  "name": "RTG",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 115,
+  "spacecraftId": 24,
+  "parentId": null,
+  "name": "Communications",
+  "kind": "SUBSYSTEM"
+ },
+ {
+  "id": 116,
+  "spacecraftId": 24,
+  "parentId": 115,
+  "name": "High-gain antenna (2.1 m)",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 117,
+  "spacecraftId": 27,
+  "parentId": null,
+  "name": "Science payload",
+  "kind": "SUBSYSTEM"
+ },
+ {
+  "id": 118,
+  "spacecraftId": 27,
+  "parentId": 117,
+  "name": "JunoCam",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 119,
+  "spacecraftId": 27,
+  "parentId": 117,
+  "name": "JIRAM",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 120,
+  "spacecraftId": 27,
+  "parentId": 117,
+  "name": "MWR",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 121,
+  "spacecraftId": 27,
+  "parentId": 117,
+  "name": "UVS",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 122,
+  "spacecraftId": 27,
+  "parentId": 117,
+  "name": "JADE",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 123,
+  "spacecraftId": 27,
+  "parentId": 117,
+  "name": "JEDI",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 124,
+  "spacecraftId": 27,
+  "parentId": 117,
+  "name": "MAG",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 125,
+  "spacecraftId": 27,
+  "parentId": 117,
+  "name": "Gravity Science",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 126,
+  "spacecraftId": 27,
+  "parentId": 117,
+  "name": "Waves",
+  "kind": "INSTRUMENT"
+ },
+ {
+  "id": 127,
+  "spacecraftId": 27,
+  "parentId": null,
+  "name": "Power",
+  "kind": "SUBSYSTEM"
+ },
+ {
+  "id": 128,
+  "spacecraftId": 27,
+  "parentId": 127,
+  "name": "Three solar arrays",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 129,
+  "spacecraftId": 27,
+  "parentId": null,
+  "name": "Radiation vault",
+  "kind": "SUBSYSTEM"
+ },
+ {
+  "id": 130,
+  "spacecraftId": 27,
+  "parentId": 129,
+  "name": "Titanium electronics vault",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 131,
+  "spacecraftId": 4,
+  "parentId": null,
+  "name": "Command Module",
+  "kind": "SUBSYSTEM"
+ },
+ {
+  "id": 132,
+  "spacecraftId": 4,
+  "parentId": 131,
+  "name": "Guidance computer",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 133,
+  "spacecraftId": 4,
+  "parentId": 131,
+  "name": "Heat shield",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 134,
+  "spacecraftId": 4,
+  "parentId": 131,
+  "name": "Docking probe",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 135,
+  "spacecraftId": 4,
+  "parentId": null,
+  "name": "Service Module",
+  "kind": "SUBSYSTEM"
+ },
+ {
+  "id": 136,
+  "spacecraftId": 4,
+  "parentId": 135,
+  "name": "Service Propulsion System",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 137,
+  "spacecraftId": 4,
+  "parentId": 135,
+  "name": "Fuel cells",
+  "kind": "COMPONENT"
+ },
+ {
+  "id": 138,
+  "spacecraftId": 4,
+  "parentId": 135,
+  "name": "Reaction control system",
+  "kind": "COMPONENT"
+ }
+]

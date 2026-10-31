@@ -1,0 +1,1217 @@
+[
+ {
+  "id": 1,
+  "year": 2011,
+  "program": "Science",
+  "category": "SCIENCE",
+  "amountMillionsUsd": 5498.2,
+  "synthetic": true,
+  "basis": "Wikidata NASA budget for 2011, split by program synthetically"
+ },
+ {
+  "id": 2,
+  "year": 2011,
+  "program": "Exploration",
+  "category": "EXPLORATION",
+  "amountMillionsUsd": 4403.3,
+  "synthetic": true,
+  "basis": "Wikidata NASA budget for 2011, split by program synthetically"
+ },
+ {
+  "id": 3,
+  "year": 2011,
+  "program": "Space Operations",
+  "category": "OPERATIONS",
+  "amountMillionsUsd": 3728.3,
+  "synthetic": true,
+  "basis": "Wikidata NASA budget for 2011, split by program synthetically"
+ },
+ {
+  "id": 4,
+  "year": 2011,
+  "program": "Safety, Security and Mission Services",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 2528.1,
+  "synthetic": true,
+  "basis": "Wikidata NASA budget for 2011, split by program synthetically"
+ },
+ {
+  "id": 5,
+  "year": 2011,
+  "program": "Space Technology",
+  "category": "TECHNOLOGY",
+  "amountMillionsUsd": 964.2,
+  "synthetic": true,
+  "basis": "Wikidata NASA budget for 2011, split by program synthetically"
+ },
+ {
+  "id": 6,
+  "year": 2011,
+  "program": "Aeronautics",
+  "category": "AERONAUTICS",
+  "amountMillionsUsd": 644.1,
+  "synthetic": true,
+  "basis": "Wikidata NASA budget for 2011, split by program synthetically"
+ },
+ {
+  "id": 7,
+  "year": 2011,
+  "program": "Construction and Environmental Compliance",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 376.7,
+  "synthetic": true,
+  "basis": "Wikidata NASA budget for 2011, split by program synthetically"
+ },
+ {
+  "id": 8,
+  "year": 2011,
+  "program": "STEM Engagement",
+  "category": "EDUCATION",
+  "amountMillionsUsd": 95.6,
+  "synthetic": true,
+  "basis": "Wikidata NASA budget for 2011, split by program synthetically"
+ },
+ {
+  "id": 9,
+  "year": 2011,
+  "program": "Inspector General",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 36.9,
+  "synthetic": true,
+  "basis": "Wikidata NASA budget for 2011, split by program synthetically"
+ },
+ {
+  "id": 10,
+  "year": 2012,
+  "program": "Science",
+  "category": "SCIENCE",
+  "amountMillionsUsd": 5402.4,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 11,
+  "year": 2012,
+  "program": "Exploration",
+  "category": "EXPLORATION",
+  "amountMillionsUsd": 4475.7,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 12,
+  "year": 2012,
+  "program": "Space Operations",
+  "category": "OPERATIONS",
+  "amountMillionsUsd": 3942.5,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 13,
+  "year": 2012,
+  "program": "Safety, Security and Mission Services",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 2401.6,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 14,
+  "year": 2012,
+  "program": "Space Technology",
+  "category": "TECHNOLOGY",
+  "amountMillionsUsd": 935.4,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 15,
+  "year": 2012,
+  "program": "Aeronautics",
+  "category": "AERONAUTICS",
+  "amountMillionsUsd": 656.2,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 16,
+  "year": 2012,
+  "program": "Construction and Environmental Compliance",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 393.0,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 17,
+  "year": 2012,
+  "program": "STEM Engagement",
+  "category": "EDUCATION",
+  "amountMillionsUsd": 98.6,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 18,
+  "year": 2012,
+  "program": "Inspector General",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 37.2,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 19,
+  "year": 2013,
+  "program": "Science",
+  "category": "SCIENCE",
+  "amountMillionsUsd": 5798.2,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 20,
+  "year": 2013,
+  "program": "Exploration",
+  "category": "EXPLORATION",
+  "amountMillionsUsd": 4634.6,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 21,
+  "year": 2013,
+  "program": "Space Operations",
+  "category": "OPERATIONS",
+  "amountMillionsUsd": 3847.1,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 22,
+  "year": 2013,
+  "program": "Safety, Security and Mission Services",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 2538.6,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 23,
+  "year": 2013,
+  "program": "Space Technology",
+  "category": "TECHNOLOGY",
+  "amountMillionsUsd": 977.6,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 24,
+  "year": 2013,
+  "program": "Aeronautics",
+  "category": "AERONAUTICS",
+  "amountMillionsUsd": 678.6,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 25,
+  "year": 2013,
+  "program": "Construction and Environmental Compliance",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 386.4,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 26,
+  "year": 2013,
+  "program": "STEM Engagement",
+  "category": "EDUCATION",
+  "amountMillionsUsd": 95.3,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 27,
+  "year": 2013,
+  "program": "Inspector General",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 38.1,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 28,
+  "year": 2014,
+  "program": "Science",
+  "category": "SCIENCE",
+  "amountMillionsUsd": 6051.3,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 29,
+  "year": 2014,
+  "program": "Exploration",
+  "category": "EXPLORATION",
+  "amountMillionsUsd": 4746.5,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 30,
+  "year": 2014,
+  "program": "Space Operations",
+  "category": "OPERATIONS",
+  "amountMillionsUsd": 4005.5,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 31,
+  "year": 2014,
+  "program": "Safety, Security and Mission Services",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 2615.9,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 32,
+  "year": 2014,
+  "program": "Space Technology",
+  "category": "TECHNOLOGY",
+  "amountMillionsUsd": 969.0,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 33,
+  "year": 2014,
+  "program": "Aeronautics",
+  "category": "AERONAUTICS",
+  "amountMillionsUsd": 712.9,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 34,
+  "year": 2014,
+  "program": "Construction and Environmental Compliance",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 394.6,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 35,
+  "year": 2014,
+  "program": "STEM Engagement",
+  "category": "EDUCATION",
+  "amountMillionsUsd": 100.7,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 36,
+  "year": 2014,
+  "program": "Inspector General",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 37.3,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 37,
+  "year": 2015,
+  "program": "Science",
+  "category": "SCIENCE",
+  "amountMillionsUsd": 5865.9,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 38,
+  "year": 2015,
+  "program": "Exploration",
+  "category": "EXPLORATION",
+  "amountMillionsUsd": 4956.2,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 39,
+  "year": 2015,
+  "program": "Space Operations",
+  "category": "OPERATIONS",
+  "amountMillionsUsd": 4024.4,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 40,
+  "year": 2015,
+  "program": "Safety, Security and Mission Services",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 2641.5,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 41,
+  "year": 2015,
+  "program": "Space Technology",
+  "category": "TECHNOLOGY",
+  "amountMillionsUsd": 1008.8,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 42,
+  "year": 2015,
+  "program": "Aeronautics",
+  "category": "AERONAUTICS",
+  "amountMillionsUsd": 689.5,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 43,
+  "year": 2015,
+  "program": "Construction and Environmental Compliance",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 401.5,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 44,
+  "year": 2015,
+  "program": "STEM Engagement",
+  "category": "EDUCATION",
+  "amountMillionsUsd": 103.6,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 45,
+  "year": 2015,
+  "program": "Inspector General",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 38.6,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 46,
+  "year": 2016,
+  "program": "Science",
+  "category": "SCIENCE",
+  "amountMillionsUsd": 5876.7,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 47,
+  "year": 2016,
+  "program": "Exploration",
+  "category": "EXPLORATION",
+  "amountMillionsUsd": 4870.0,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 48,
+  "year": 2016,
+  "program": "Space Operations",
+  "category": "OPERATIONS",
+  "amountMillionsUsd": 4058.4,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 49,
+  "year": 2016,
+  "program": "Safety, Security and Mission Services",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 2755.8,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 50,
+  "year": 2016,
+  "program": "Space Technology",
+  "category": "TECHNOLOGY",
+  "amountMillionsUsd": 1045.4,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 51,
+  "year": 2016,
+  "program": "Aeronautics",
+  "category": "AERONAUTICS",
+  "amountMillionsUsd": 705.0,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 52,
+  "year": 2016,
+  "program": "Construction and Environmental Compliance",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 417.2,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 53,
+  "year": 2016,
+  "program": "STEM Engagement",
+  "category": "EDUCATION",
+  "amountMillionsUsd": 100.8,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 54,
+  "year": 2016,
+  "program": "Inspector General",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 39.7,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 55,
+  "year": 2017,
+  "program": "Science",
+  "category": "SCIENCE",
+  "amountMillionsUsd": 6121.1,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 56,
+  "year": 2017,
+  "program": "Exploration",
+  "category": "EXPLORATION",
+  "amountMillionsUsd": 5302.6,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 57,
+  "year": 2017,
+  "program": "Space Operations",
+  "category": "OPERATIONS",
+  "amountMillionsUsd": 4225.6,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 58,
+  "year": 2017,
+  "program": "Safety, Security and Mission Services",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 2738.5,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 59,
+  "year": 2017,
+  "program": "Space Technology",
+  "category": "TECHNOLOGY",
+  "amountMillionsUsd": 1105.0,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 60,
+  "year": 2017,
+  "program": "Aeronautics",
+  "category": "AERONAUTICS",
+  "amountMillionsUsd": 739.5,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 61,
+  "year": 2017,
+  "program": "Construction and Environmental Compliance",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 421.7,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 62,
+  "year": 2017,
+  "program": "STEM Engagement",
+  "category": "EDUCATION",
+  "amountMillionsUsd": 106.5,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 63,
+  "year": 2017,
+  "program": "Inspector General",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 42.3,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 64,
+  "year": 2018,
+  "program": "Science",
+  "category": "SCIENCE",
+  "amountMillionsUsd": 6280.0,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 65,
+  "year": 2018,
+  "program": "Exploration",
+  "category": "EXPLORATION",
+  "amountMillionsUsd": 5238.3,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 66,
+  "year": 2018,
+  "program": "Space Operations",
+  "category": "OPERATIONS",
+  "amountMillionsUsd": 4482.1,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 67,
+  "year": 2018,
+  "program": "Safety, Security and Mission Services",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 2907.0,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 68,
+  "year": 2018,
+  "program": "Space Technology",
+  "category": "TECHNOLOGY",
+  "amountMillionsUsd": 1088.1,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 69,
+  "year": 2018,
+  "program": "Aeronautics",
+  "category": "AERONAUTICS",
+  "amountMillionsUsd": 774.7,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 70,
+  "year": 2018,
+  "program": "Construction and Environmental Compliance",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 446.9,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 71,
+  "year": 2018,
+  "program": "STEM Engagement",
+  "category": "EDUCATION",
+  "amountMillionsUsd": 109.6,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 72,
+  "year": 2018,
+  "program": "Inspector General",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 40.2,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 73,
+  "year": 2019,
+  "program": "Science",
+  "category": "SCIENCE",
+  "amountMillionsUsd": 6578.9,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 74,
+  "year": 2019,
+  "program": "Exploration",
+  "category": "EXPLORATION",
+  "amountMillionsUsd": 5368.0,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 75,
+  "year": 2019,
+  "program": "Space Operations",
+  "category": "OPERATIONS",
+  "amountMillionsUsd": 4364.1,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 76,
+  "year": 2019,
+  "program": "Safety, Security and Mission Services",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 2939.0,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 77,
+  "year": 2019,
+  "program": "Space Technology",
+  "category": "TECHNOLOGY",
+  "amountMillionsUsd": 1112.7,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 78,
+  "year": 2019,
+  "program": "Aeronautics",
+  "category": "AERONAUTICS",
+  "amountMillionsUsd": 807.1,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 79,
+  "year": 2019,
+  "program": "Construction and Environmental Compliance",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 441.4,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 80,
+  "year": 2019,
+  "program": "STEM Engagement",
+  "category": "EDUCATION",
+  "amountMillionsUsd": 109.1,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 81,
+  "year": 2019,
+  "program": "Inspector General",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 43.4,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 82,
+  "year": 2020,
+  "program": "Science",
+  "category": "SCIENCE",
+  "amountMillionsUsd": 6646.0,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 83,
+  "year": 2020,
+  "program": "Exploration",
+  "category": "EXPLORATION",
+  "amountMillionsUsd": 5452.3,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 84,
+  "year": 2020,
+  "program": "Space Operations",
+  "category": "OPERATIONS",
+  "amountMillionsUsd": 4519.2,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 85,
+  "year": 2020,
+  "program": "Safety, Security and Mission Services",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 2912.2,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 86,
+  "year": 2020,
+  "program": "Space Technology",
+  "category": "TECHNOLOGY",
+  "amountMillionsUsd": 1182.6,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 87,
+  "year": 2020,
+  "program": "Aeronautics",
+  "category": "AERONAUTICS",
+  "amountMillionsUsd": 778.8,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 88,
+  "year": 2020,
+  "program": "Construction and Environmental Compliance",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 467.5,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 89,
+  "year": 2020,
+  "program": "STEM Engagement",
+  "category": "EDUCATION",
+  "amountMillionsUsd": 112.7,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 90,
+  "year": 2020,
+  "program": "Inspector General",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 44.5,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 91,
+  "year": 2021,
+  "program": "Science",
+  "category": "SCIENCE",
+  "amountMillionsUsd": 6929.1,
+  "synthetic": true,
+  "basis": "Wikidata NASA budget for 2021, split by program synthetically"
+ },
+ {
+  "id": 92,
+  "year": 2021,
+  "program": "Exploration",
+  "category": "EXPLORATION",
+  "amountMillionsUsd": 5719.9,
+  "synthetic": true,
+  "basis": "Wikidata NASA budget for 2021, split by program synthetically"
+ },
+ {
+  "id": 93,
+  "year": 2021,
+  "program": "Space Operations",
+  "category": "OPERATIONS",
+  "amountMillionsUsd": 4537.6,
+  "synthetic": true,
+  "basis": "Wikidata NASA budget for 2021, split by program synthetically"
+ },
+ {
+  "id": 94,
+  "year": 2021,
+  "program": "Safety, Security and Mission Services",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 3032.3,
+  "synthetic": true,
+  "basis": "Wikidata NASA budget for 2021, split by program synthetically"
+ },
+ {
+  "id": 95,
+  "year": 2021,
+  "program": "Space Technology",
+  "category": "TECHNOLOGY",
+  "amountMillionsUsd": 1163.5,
+  "synthetic": true,
+  "basis": "Wikidata NASA budget for 2021, split by program synthetically"
+ },
+ {
+  "id": 96,
+  "year": 2021,
+  "program": "Aeronautics",
+  "category": "AERONAUTICS",
+  "amountMillionsUsd": 793.5,
+  "synthetic": true,
+  "basis": "Wikidata NASA budget for 2021, split by program synthetically"
+ },
+ {
+  "id": 97,
+  "year": 2021,
+  "program": "Construction and Environmental Compliance",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 456.2,
+  "synthetic": true,
+  "basis": "Wikidata NASA budget for 2021, split by program synthetically"
+ },
+ {
+  "id": 98,
+  "year": 2021,
+  "program": "STEM Engagement",
+  "category": "EDUCATION",
+  "amountMillionsUsd": 119.5,
+  "synthetic": true,
+  "basis": "Wikidata NASA budget for 2021, split by program synthetically"
+ },
+ {
+  "id": 99,
+  "year": 2021,
+  "program": "Inspector General",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 44.7,
+  "synthetic": true,
+  "basis": "Wikidata NASA budget for 2021, split by program synthetically"
+ },
+ {
+  "id": 100,
+  "year": 2022,
+  "program": "Science",
+  "category": "SCIENCE",
+  "amountMillionsUsd": 6777.1,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 101,
+  "year": 2022,
+  "program": "Exploration",
+  "category": "EXPLORATION",
+  "amountMillionsUsd": 5960.7,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 102,
+  "year": 2022,
+  "program": "Space Operations",
+  "category": "OPERATIONS",
+  "amountMillionsUsd": 4937.0,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 103,
+  "year": 2022,
+  "program": "Safety, Security and Mission Services",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 3168.2,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 104,
+  "year": 2022,
+  "program": "Space Technology",
+  "category": "TECHNOLOGY",
+  "amountMillionsUsd": 1259.0,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 105,
+  "year": 2022,
+  "program": "Aeronautics",
+  "category": "AERONAUTICS",
+  "amountMillionsUsd": 878.5,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 106,
+  "year": 2022,
+  "program": "Construction and Environmental Compliance",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 479.3,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 107,
+  "year": 2022,
+  "program": "STEM Engagement",
+  "category": "EDUCATION",
+  "amountMillionsUsd": 125.8,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 108,
+  "year": 2022,
+  "program": "Inspector General",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 46.9,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 109,
+  "year": 2023,
+  "program": "Science",
+  "category": "SCIENCE",
+  "amountMillionsUsd": 7453.2,
+  "synthetic": true,
+  "basis": "Wikidata NASA budget for 2023, split by program synthetically"
+ },
+ {
+  "id": 110,
+  "year": 2023,
+  "program": "Exploration",
+  "category": "EXPLORATION",
+  "amountMillionsUsd": 5982.6,
+  "synthetic": true,
+  "basis": "Wikidata NASA budget for 2023, split by program synthetically"
+ },
+ {
+  "id": 111,
+  "year": 2023,
+  "program": "Space Operations",
+  "category": "OPERATIONS",
+  "amountMillionsUsd": 5175.7,
+  "synthetic": true,
+  "basis": "Wikidata NASA budget for 2023, split by program synthetically"
+ },
+ {
+  "id": 112,
+  "year": 2023,
+  "program": "Safety, Security and Mission Services",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 3238.1,
+  "synthetic": true,
+  "basis": "Wikidata NASA budget for 2023, split by program synthetically"
+ },
+ {
+  "id": 113,
+  "year": 2023,
+  "program": "Space Technology",
+  "category": "TECHNOLOGY",
+  "amountMillionsUsd": 1220.1,
+  "synthetic": true,
+  "basis": "Wikidata NASA budget for 2023, split by program synthetically"
+ },
+ {
+  "id": 114,
+  "year": 2023,
+  "program": "Aeronautics",
+  "category": "AERONAUTICS",
+  "amountMillionsUsd": 874.3,
+  "synthetic": true,
+  "basis": "Wikidata NASA budget for 2023, split by program synthetically"
+ },
+ {
+  "id": 115,
+  "year": 2023,
+  "program": "Construction and Environmental Compliance",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 509.3,
+  "synthetic": true,
+  "basis": "Wikidata NASA budget for 2023, split by program synthetically"
+ },
+ {
+  "id": 116,
+  "year": 2023,
+  "program": "STEM Engagement",
+  "category": "EDUCATION",
+  "amountMillionsUsd": 129.4,
+  "synthetic": true,
+  "basis": "Wikidata NASA budget for 2023, split by program synthetically"
+ },
+ {
+  "id": 117,
+  "year": 2023,
+  "program": "Inspector General",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 47.8,
+  "synthetic": true,
+  "basis": "Wikidata NASA budget for 2023, split by program synthetically"
+ },
+ {
+  "id": 118,
+  "year": 2024,
+  "program": "Science",
+  "category": "SCIENCE",
+  "amountMillionsUsd": 7723.5,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 119,
+  "year": 2024,
+  "program": "Exploration",
+  "category": "EXPLORATION",
+  "amountMillionsUsd": 6034.1,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 120,
+  "year": 2024,
+  "program": "Space Operations",
+  "category": "OPERATIONS",
+  "amountMillionsUsd": 5029.4,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 121,
+  "year": 2024,
+  "program": "Safety, Security and Mission Services",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 3402.4,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 122,
+  "year": 2024,
+  "program": "Space Technology",
+  "category": "TECHNOLOGY",
+  "amountMillionsUsd": 1296.5,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 123,
+  "year": 2024,
+  "program": "Aeronautics",
+  "category": "AERONAUTICS",
+  "amountMillionsUsd": 891.1,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 124,
+  "year": 2024,
+  "program": "Construction and Environmental Compliance",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 527.1,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 125,
+  "year": 2024,
+  "program": "STEM Engagement",
+  "category": "EDUCATION",
+  "amountMillionsUsd": 125.4,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 126,
+  "year": 2024,
+  "program": "Inspector General",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 50.1,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 127,
+  "year": 2025,
+  "program": "Science",
+  "category": "SCIENCE",
+  "amountMillionsUsd": 7442.5,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 128,
+  "year": 2025,
+  "program": "Exploration",
+  "category": "EXPLORATION",
+  "amountMillionsUsd": 6435.8,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 129,
+  "year": 2025,
+  "program": "Space Operations",
+  "category": "OPERATIONS",
+  "amountMillionsUsd": 5051.9,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 130,
+  "year": 2025,
+  "program": "Safety, Security and Mission Services",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 3458.1,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 131,
+  "year": 2025,
+  "program": "Space Technology",
+  "category": "TECHNOLOGY",
+  "amountMillionsUsd": 1284.9,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 132,
+  "year": 2025,
+  "program": "Aeronautics",
+  "category": "AERONAUTICS",
+  "amountMillionsUsd": 913.4,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 133,
+  "year": 2025,
+  "program": "Construction and Environmental Compliance",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 532.8,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 134,
+  "year": 2025,
+  "program": "STEM Engagement",
+  "category": "EDUCATION",
+  "amountMillionsUsd": 133.1,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ },
+ {
+  "id": 135,
+  "year": 2025,
+  "program": "Inspector General",
+  "category": "SUPPORT",
+  "amountMillionsUsd": 48.3,
+  "synthetic": true,
+  "basis": "NASA budget interpolated between Wikidata's figures, split by program synthetically"
+ }
+]

@@ -1,0 +1,64 @@
+server:
+  port: ${SERVER_PORT:8122}
+  # Behind a proxy the request arrives as http://<pod>; honour its X-Forwarded-* headers.
+  forward-headers-strategy: framework
+
+spring:
+  application:
+    name: space-service
+
+  # In memory on purpose: the dataset is re-seeded on every boot, so a writable demo forgets whatever
+  # anybody scribbled on it the moment it restarts. DB_URL can point elsewhere, but nothing here
+  # assumes it.
+  datasource:
+    url: ${DB_URL:jdbc:h2:mem:space;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE}
+    username: ${DB_USERNAME:sa}
+    password: ${DB_PASSWORD:}
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: ${DDL_AUTO:create-drop}
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: false
+        default_batch_fetch_size: 100
+  h2:
+    console:
+      enabled: ${H2_CONSOLE:false}
+
+  jackson:
+    default-property-inclusion: always
+
+space:
+  # The header carrying the write key. A custom header is what makes a browser write a "non-simple"
+  # request, so it is also named in the CORS allowed headers — see WebConfig.
+  write-key-header: ${WRITE_KEY_HEADER:X-Api-Key}
+  # No default on purpose: an unset key refuses every write rather than allowing them.
+  write-key: ${WRITE_KEY:}
+  # The database is in the heap: this ceiling is what keeps a flood of creates from becoming an
+  # OutOfMemoryError. A create beyond it is a 507.
+  max-rows-per-collection: ${MAX_ROWS_PER_COLLECTION:2000}
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    operations-sorter: alpha
+    tags-sorter: alpha
+  api-docs:
+    path: /v3/api-docs
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
+  endpoint:
+    health:
+      probes:
+        enabled: true
+
+logging:
+  level:
+    io.mateu.space: INFO
