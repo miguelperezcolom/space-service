@@ -11,7 +11,9 @@ import java.util.List;
  *
  * <p>On a write: the scalar fields are replaced; {@code crewIds}, {@code gallery} and the picture
  * fields are kept as they are when the body leaves them out (null) — a form that edits the facts
- * should not wipe the photographs. Names, {@code url}, {@code wikidataUrl} are read-only.
+ * should not wipe the photographs. Names, {@code url}, {@code wikidataUrl} are read-only. The cost
+ * travels twice: {@code costUsd} (a number, what a table and a range filter read) and {@code cost}
+ * (a money value, what a money widget reads); a write takes {@code cost} when it is given.
  */
 public record MissionDto(
     Long id,
@@ -23,6 +25,8 @@ public record MissionDto(
     LocalDate launchDate,
     LocalDate endDate,
     Integer launchYear,
+    /** The launch window, as {from, to}; written leniently (see {@link DateWindow}). */
+    DateWindow launchWindow,
     Long destinationId,
     String destinationName,
     Long launchSiteId,
@@ -33,6 +37,8 @@ public record MissionDto(
     List<String> crewNames,
     Integer crewSize,
     BigDecimal costUsd,
+    /** The same cost as a money value {value, currency}; on a write it wins over costUsd. */
+    Amount cost,
     String summary,
     String objectives,
     Boolean featured,

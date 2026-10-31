@@ -197,6 +197,18 @@ class SpaceApiTest {
     mvc.perform(post("/api/missions").header(KEY, "testkey").contentType(MediaType.APPLICATION_JSON)
             .content("{\"name\":\"X\",\"crewIds\":\"5,11\"}"))
         .andExpect(jsonPath("$.crewIds", contains(5, 11)));
+    // a money widget's value and a date-range widget's value, as server-side interpolation prints them
+    mvc.perform(post("/api/missions").header(KEY, "testkey").contentType(MediaType.APPLICATION_JSON)
+            .content("{\"name\":\"Y\",\"cost\":\"{value=1.5E9, currency=USD, locale=en-US}\","
+                + "\"launchWindow\":\"{from=2027-01-01, to=2027-02-15}\"}"))
+        .andExpect(jsonPath("$.costUsd").value(1500000000))
+        .andExpect(jsonPath("$.cost.currency").value("USD"))
+        .andExpect(jsonPath("$.launchWindow.from").value("2027-01-01"))
+        .andExpect(jsonPath("$.launchWindow.to").value("2027-02-15"));
+    mvc.perform(post("/api/missions").header(KEY, "testkey").contentType(MediaType.APPLICATION_JSON)
+            .content("{\"name\":\"Z\",\"cost\":{\"value\":42,\"currency\":\"USD\"},\"launchWindow\":{\"from\":\"2028-07-05\"}}"))
+        .andExpect(jsonPath("$.costUsd").value(42))
+        .andExpect(jsonPath("$.launchWindow.from").value("2028-07-05"));
   }
 
   @Test

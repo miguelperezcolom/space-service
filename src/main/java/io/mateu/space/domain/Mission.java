@@ -40,6 +40,11 @@ public class Mission {
   private LocalDate launchDate;
   private LocalDate endDate;
 
+  /** The window a planned mission aims to launch in. */
+  private LocalDate launchWindowStart;
+
+  private LocalDate launchWindowEnd;
+
   @ManyToOne(fetch = FetchType.LAZY)
   private CelestialBody destination;
 

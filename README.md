@@ -106,6 +106,9 @@ a JSON template (`{"costUsd":"${state.costUsd}"}`):
 
 - an **empty string is null** for every type — numbers and dates included;
 - an **id list** is read from an array, `"1,2"` or `"[1, 2]"`;
+- a mission's **`cost`** (a money value `{value, currency}`, beside the plain `costUsd`) and its
+  **`launchWindow`** (`{from, to}`) are read from the object or from any text carrying the value /
+  two ISO dates — the shape a money or a date-range widget hands over once interpolated;
 - on a `PUT`, the **picture fields, the gallery and the crew are kept when the body leaves them
   out**: a form that edits a mission's facts does not wipe its photographs. Given (even empty), they
   are replaced.

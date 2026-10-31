@@ -3,6 +3,8 @@ package io.mateu.space.infra.in.rest;
 import io.mateu.space.domain.Astronaut;
 import io.mateu.space.domain.Mission;
 import io.mateu.space.domain.Picture;
+import io.mateu.space.infra.in.rest.dto.Amount;
+import io.mateu.space.infra.in.rest.dto.DateWindow;
 import io.mateu.space.infra.in.rest.dto.IdList;
 import io.mateu.space.infra.in.rest.dto.MissionDto;
 import io.mateu.space.infra.in.rest.query.FilterKind;
@@ -74,6 +76,7 @@ public class MissionsController extends CrudController<Mission, MissionDto> {
         .filter("featured", FilterKind.BOOLEAN)
         .filter("launchDate", FilterKind.DATE)
         .filter("endDate", FilterKind.DATE)
+        .filter("launchWindowStart", FilterKind.DATE)
         .filter("costUsd", FilterKind.NUMBER)
         .filter("destinationId", "destination.id", FilterKind.REF)
         .filter("launchSiteId", "launchSite.id", FilterKind.REF)
@@ -107,6 +110,9 @@ public class MissionsController extends CrudController<Mission, MissionDto> {
         m.getLaunchDate(),
         m.getEndDate(),
         m.getLaunchDate() == null ? null : m.getLaunchDate().getYear(),
+        m.getLaunchWindowStart() == null && m.getLaunchWindowEnd() == null
+            ? null
+            : new DateWindow(m.getLaunchWindowStart(), m.getLaunchWindowEnd()),
         m.getDestination() == null ? null : m.getDestination().getId(),
         m.getDestination() == null ? null : m.getDestination().getName(),
         m.getLaunchSite() == null ? null : m.getLaunchSite().getId(),
@@ -117,6 +123,7 @@ public class MissionsController extends CrudController<Mission, MissionDto> {
         m.getCrew().stream().map(Astronaut::getName).toList(),
         m.getCrew().size(),
         m.getCostUsd(),
+        Amount.usd(m.getCostUsd()),
         m.getSummary(),
         m.getObjectives(),
         m.getFeatured(),
@@ -144,7 +151,9 @@ public class MissionsController extends CrudController<Mission, MissionDto> {
     m.setDestination(resolveOne(dto.destinationId(), bodies, "celestial body"));
     m.setLaunchSite(resolveOne(dto.launchSiteId(), sites, "launch site"));
     m.setSpacecraft(resolveOne(dto.spacecraftId(), spacecraft, "spacecraft"));
-    m.setCostUsd(dto.costUsd());
+    m.setCostUsd(dto.cost() != null ? dto.cost().value() : dto.costUsd());
+    m.setLaunchWindowStart(dto.launchWindow() == null ? null : dto.launchWindow().from());
+    m.setLaunchWindowEnd(dto.launchWindow() == null ? null : dto.launchWindow().to());
     m.setSummary(dto.summary());
     m.setObjectives(dto.objectives());
     m.setFeatured(dto.featured() != null && dto.featured());
