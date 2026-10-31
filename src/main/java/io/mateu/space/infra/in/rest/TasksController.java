@@ -77,6 +77,12 @@ public class TasksController extends CrudController<MissionTask, TaskDto> {
   }
 
   @Override
+  protected void onCreate(MissionTask t) {
+    if (t.getStatus() == null) t.setStatus("BACKLOG");
+    if (t.getProgress() == null) t.setProgress(0);
+  }
+
+  @Override
   protected MissionTask newEntity() {
     return new MissionTask();
   }

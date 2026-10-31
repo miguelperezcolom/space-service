@@ -118,6 +118,7 @@ public abstract class CrudController<E, D> {
     if (repository().count() >= maxRows) throw new CollectionFullException(collection(), maxRows);
     E entity = newEntity();
     apply(dto, entity);
+    onCreate(entity);
     E saved = repository().save(entity);
     D body = toDto(saved);
     return ResponseEntity.created(URI.create(urlOf(idOf(body)))).body(body);
@@ -201,6 +202,9 @@ public abstract class CrudController<E, D> {
         .findFirst()
         .orElseThrow(() -> new InvalidValueException(field, value, allowed));
   }
+
+  /** What a new row gets that the body did not say — a planned mission, a task in the backlog. */
+  protected void onCreate(E entity) {}
 
   /** A link to the record's Wikidata item, or null. */
   protected static String wikidataUrl(String qid) {

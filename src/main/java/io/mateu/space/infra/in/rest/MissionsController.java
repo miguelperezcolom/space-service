@@ -88,6 +88,11 @@ public class MissionsController extends CrudController<Mission, MissionDto> {
   }
 
   @Override
+  protected void onCreate(Mission m) {
+    if (m.getStatus() == null) m.setStatus("PLANNED");
+  }
+
+  @Override
   protected Mission newEntity() {
     return new Mission();
   }

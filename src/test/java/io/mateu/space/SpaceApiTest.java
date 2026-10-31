@@ -195,8 +195,9 @@ class SpaceApiTest {
         .andExpect(jsonPath("$.crewNames", containsInAnyOrder("Neil Armstrong", "Buzz Aldrin")))
         .andExpect(jsonPath("$.featured").value(true));
     mvc.perform(post("/api/missions").header(KEY, "testkey").contentType(MediaType.APPLICATION_JSON)
-            .content("{\"name\":\"X\",\"crewIds\":\"5,11\"}"))
-        .andExpect(jsonPath("$.crewIds", contains(5, 11)));
+            .content("{\"name\":\"X\",\"crewIds\":\"5,11\",\"status\":\"\"}"))
+        .andExpect(jsonPath("$.crewIds", contains(5, 11)))
+        .andExpect(jsonPath("$.status").value("PLANNED"));
     // a money widget's value and a date-range widget's value, as server-side interpolation prints them
     mvc.perform(post("/api/missions").header(KEY, "testkey").contentType(MediaType.APPLICATION_JSON)
             .content("{\"name\":\"Y\",\"cost\":\"{value=1.5E9, currency=USD, locale=en-US}\","
