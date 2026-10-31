@@ -294,4 +294,19 @@ class SpaceApiTest {
     String body = mvc.perform(get(url)).andReturn().getResponse().getContentAsString();
     return Long.parseLong(body.replaceAll(".*\"totalElements\":(\\d+).*", "$1"));
   }
+
+  @Test
+  @DisplayName("a new photo brings its sizes: the NASA library's renditions, or the same URL")
+  @DirtiesContext
+  void newPhotoBringsItsSizes() throws Exception {
+    mvc.perform(put("/api/astronauts/14").header(KEY, "testkey").contentType(MediaType.APPLICATION_JSON)
+            .content("{\"name\":\"Alfred Worden\",\"image\":\"https://images-assets.nasa.gov/image/AS15-88-11866/AS15-88-11866~medium.jpg\"}"))
+        .andExpect(status().isOk())
+        .andExpect(jsonPath("$.thumbnail").value("https://images-assets.nasa.gov/image/AS15-88-11866/AS15-88-11866~thumb.jpg"))
+        .andExpect(jsonPath("$.imageLarge").value("https://images-assets.nasa.gov/image/AS15-88-11866/AS15-88-11866~large.jpg"));
+    mvc.perform(put("/api/astronauts/14").header(KEY, "testkey").contentType(MediaType.APPLICATION_JSON)
+            .content("{\"name\":\"Alfred Worden\",\"image\":\"https://example.org/worden.jpg\"}"))
+        .andExpect(jsonPath("$.thumbnail").value("https://example.org/worden.jpg"))
+        .andExpect(jsonPath("$.imageLarge").value("https://example.org/worden.jpg"));
+  }
 }
