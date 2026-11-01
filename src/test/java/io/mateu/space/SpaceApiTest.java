@@ -309,4 +309,47 @@ class SpaceApiTest {
         .andExpect(jsonPath("$.thumbnail").value("https://example.org/worden.jpg"))
         .andExpect(jsonPath("$.imageLarge").value("https://example.org/worden.jpg"));
   }
+
+  private static final String PNG_1PX =
+      "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==";
+
+  @Test
+  @DisplayName("an uploaded portrait (a data: URI) is kept and served; the record points at it")
+  @DirtiesContext
+  void uploadedPortrait() throws Exception {
+    var body = mvc.perform(put("/api/astronauts/14").header(KEY, "testkey").contentType(MediaType.APPLICATION_JSON)
+            .content("{\"name\":\"Alfred Worden\",\"image\":\"data:image/png;base64," + PNG_1PX + "\"}"))
+        .andExpect(status().isOk())
+        .andExpect(jsonPath("$.image").value(matchesPattern("http://localhost/api/astronauts/14/portrait\\?v=[0-9a-f]{16}")))
+        .andExpect(jsonPath("$.thumbnail").value(startsWith("http://localhost/api/astronauts/14/portrait?v=")))
+        .andExpect(jsonPath("$.imageLarge").value(startsWith("http://localhost/api/astronauts/14/portrait?v=")))
+        .andReturn().getResponse().getContentAsString();
+    var bytes = java.util.Base64.getDecoder().decode(PNG_1PX);
+    mvc.perform(get("/api/astronauts/14/portrait"))
+        .andExpect(status().isOk())
+        .andExpect(content().contentType("image/png"))
+        .andExpect(content().bytes(bytes))
+        .andExpect(header().string("Cache-Control", containsString("max-age")));
+    // the record keeps pointing there; a later plain URL replaces it as before
+    mvc.perform(get("/api/astronauts/14")).andExpect(jsonPath("$.image").value(startsWith("http://localhost/api/astronauts/14/portrait")));
+    // a read needs no key; a write without one is still refused
+    mvc.perform(put("/api/astronauts/14").contentType(MediaType.APPLICATION_JSON)
+            .content("{\"name\":\"Alfred Worden\",\"image\":\"data:image/png;base64," + PNG_1PX + "\"}"))
+        .andExpect(status().isUnauthorized());
+  }
+
+  @Test
+  @DisplayName("an upload that is not a JPEG/PNG/WebP/GIF image, or is over 2 MB, is a 400")
+  void refusedUploads() throws Exception {
+    mvc.perform(put("/api/astronauts/14").header(KEY, "testkey").contentType(MediaType.APPLICATION_JSON)
+            .content("{\"name\":\"Alfred Worden\",\"image\":\"data:text/html;base64,PGI+eDwvYj4=\"}"))
+        .andExpect(status().isBadRequest())
+        .andExpect(jsonPath("$.message").value(containsString("JPEG, PNG, WebP or GIF")));
+    var big = java.util.Base64.getEncoder().encodeToString(new byte[2 * 1024 * 1024 + 100]);
+    mvc.perform(put("/api/astronauts/14").header(KEY, "testkey").contentType(MediaType.APPLICATION_JSON)
+            .content("{\"name\":\"Alfred Worden\",\"image\":\"data:image/jpeg;base64," + big + "\"}"))
+        .andExpect(status().isBadRequest())
+        .andExpect(jsonPath("$.message").value(containsString("larger than 2 MB")));
+    mvc.perform(get("/api/astronauts/15/portrait")).andExpect(status().isNotFound());
+  }
 }

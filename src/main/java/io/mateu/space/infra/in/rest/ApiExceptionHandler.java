@@ -27,7 +27,8 @@ public class ApiExceptionHandler {
     BadReferenceException.class,
     UnknownFilterException.class,
     TooManyValuesException.class,
-    InvalidValueException.class
+    InvalidValueException.class,
+    InvalidImageException.class
   })
   public ResponseEntity<Map<String, Object>> badRequest(RuntimeException e) {
     return body(HttpStatus.BAD_REQUEST, e.getMessage());

@@ -40,6 +40,10 @@ space:
   # The database is in the heap: this ceiling is what keeps a flood of creates from becoming an
   # OutOfMemoryError. A create beyond it is a 507.
   max-rows-per-collection: ${MAX_ROWS_PER_COLLECTION:2000}
+  # Where this API is reached from a browser (e.g. https://space-api.ec1.mateu.io): an uploaded
+  # portrait is served here and the record points at it with an ABSOLUTE url. Empty = the origin of
+  # the request that uploaded it (behind the ingress, its X-Forwarded-* headers).
+  public-base-url: ${PUBLIC_BASE_URL:}
 
 springdoc:
   swagger-ui:
