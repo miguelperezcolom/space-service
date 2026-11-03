@@ -23,6 +23,9 @@ public class TasksController extends CrudController<MissionTask, TaskDto> {
   static final List<String> PHASES = List.of("DESIGN", "BUILD", "INTEGRATION", "TEST", "LAUNCH_OPS");
   static final List<String> PRIORITIES = List.of("LOW", "MEDIUM", "HIGH", "CRITICAL");
 
+  /** The gap between neighbouring cards when a column is numbered (seed, a new card). */
+  public static final double ORDER_STEP = 1000;
+
   private final MissionTaskRepository tasks;
   private final MissionRepository missions;
 
@@ -57,6 +60,7 @@ public class TasksController extends CrudController<MissionTask, TaskDto> {
         .filter("missionId", "mission.id", FilterKind.REF)
         .filter("dueDate", FilterKind.DATE)
         .filter("progress", FilterKind.NUMBER)
+        .filter("boardOrder", FilterKind.NUMBER)
         .searchable("title", "owner", "description", "mission.name")
         .defaultSort("dueDate")
         .build();
@@ -65,12 +69,23 @@ public class TasksController extends CrudController<MissionTask, TaskDto> {
   @Operation(
       summary = "Move a card",
       description = "Sets only the status (and the progress a status implies: 0 in the backlog, 100 "
-          + "when done) — what dragging a card to another column means. Requires the write API key.")
+          + "when done) and, when given, the card's place in the column (boardOrder) — what dragging "
+          + "a card means. Without boardOrder a card entering another column goes to its end. "
+          + "Requires the write API key.")
   @Transactional
   @PostMapping("/{id}/move")
-  public TaskDto move(@PathVariable Long id, @RequestParam String status) {
+  public TaskDto move(
+      @PathVariable Long id,
+      @RequestParam String status,
+      @RequestParam(required = false) Double boardOrder) {
     MissionTask t = tasks.findById(id).orElseThrow(() -> new NotFoundException(collection(), id));
+    boolean changesColumn = !java.util.Objects.equals(t.getStatus(), status);
     t.setStatus(oneOf(status, "status", STATUSES));
+    if (boardOrder != null) {
+      t.setBoardOrder(boardOrder);
+    } else if (changesColumn) {
+      t.setBoardOrder(endOfColumn(t));
+    }
     if ("BACKLOG".equals(t.getStatus())) t.setProgress(0);
     if ("DONE".equals(t.getStatus())) t.setProgress(100);
     return toDto(t);
@@ -80,6 +95,16 @@ public class TasksController extends CrudController<MissionTask, TaskDto> {
   protected void onCreate(MissionTask t) {
     if (t.getStatus() == null) t.setStatus("BACKLOG");
     if (t.getProgress() == null) t.setProgress(0);
+  }
+
+  /** One step past the last card of the task's column. */
+  private double endOfColumn(MissionTask t) {
+    return tasks.findAll().stream()
+            .filter(o -> o != t && java.util.Objects.equals(o.getStatus(), t.getStatus()) && o.getBoardOrder() != null)
+            .mapToDouble(MissionTask::getBoardOrder)
+            .max()
+            .orElse(0)
+        + ORDER_STEP;
   }
 
   @Override
@@ -107,6 +132,7 @@ public class TasksController extends CrudController<MissionTask, TaskDto> {
         t.getEstimateDays(),
         t.getProgress(),
         t.getDescription(),
+        t.getBoardOrder(),
         urlOf(t.getId()));
   }
 
@@ -125,5 +151,11 @@ public class TasksController extends CrudController<MissionTask, TaskDto> {
     }
     t.setProgress(dto.progress());
     t.setDescription(dto.description());
+    // a write that names no order (an edit form) keeps the card where it is; a new card goes last
+    if (dto.boardOrder() != null) {
+      t.setBoardOrder(dto.boardOrder());
+    } else if (t.getBoardOrder() == null) {
+      t.setBoardOrder(endOfColumn(t));
+    }
   }
 }
