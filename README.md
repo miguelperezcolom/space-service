@@ -85,6 +85,10 @@ so a table renders without a request per row.
 | `POST /api/tasks/{id}/move?status=DONE` | move a card to another column (sets the progress a status implies) |
 | `GET /api/credits` | every photograph, with its credit and source page |
 
+**Neighbours.** `GET /api/<collection>/{id}` also returns `previousId` and `nextId`: the rows beside it
+in the list's default order (the same one a list with no `sort` returns), null at either end. They
+ignore any filter, because a single read knows nothing about one.
+
 ## Writing
 
 Reads are open. **Writes need the `X-Api-Key` header** (`space.write-key`, env `WRITE_KEY`). Without

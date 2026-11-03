@@ -1,5 +1,6 @@
 package io.mateu.space.infra.in.rest;
 
+import io.mateu.space.infra.in.rest.dto.WithNeighbours;
 import io.mateu.space.infra.in.rest.query.PageResponse;
 import io.mateu.space.infra.in.rest.query.QuerySpec;
 import io.mateu.space.infra.in.rest.query.SpecificationBuilder;
@@ -9,6 +10,8 @@ import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.enums.ParameterIn;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 import jakarta.validation.Valid;
 import java.net.URI;
 import java.util.List;
@@ -38,6 +41,8 @@ public abstract class CrudController<E, D> {
    */
   @Value("${space.max-rows-per-collection:2000}")
   private long maxRows;
+
+  @PersistenceContext private EntityManager entityManager;
 
   /** The collection's path segment — {@code missions} — used to build each row's self link. */
   protected abstract String collection();
@@ -96,13 +101,26 @@ public abstract class CrudController<E, D> {
 
   @Operation(summary = "One row by id")
   @ApiResponses({
-    @ApiResponse(responseCode = "200", description = "The row"),
+    @ApiResponse(responseCode = "200", description = "The row, with previousId and nextId: its neighbours in the unfiltered list's order"),
     @ApiResponse(responseCode = "404", description = "No row with that id")
   })
   @Transactional(readOnly = true)
   @GetMapping("/{id}")
-  public D get(@PathVariable Long id) {
-    return toDto(repository().findById(id).orElseThrow(() -> new NotFoundException(collection(), id)));
+  public WithNeighbours<D> get(@PathVariable Long id) {
+    D row = toDto(repository().findById(id).orElseThrow(() -> new NotFoundException(collection(), id)));
+    List<Long> ids = idsInListOrder();
+    int at = ids.indexOf(id);
+    return new WithNeighbours<>(
+        row, at > 0 ? ids.get(at - 1) : null, at >= 0 && at < ids.size() - 1 ? ids.get(at + 1) : null);
+  }
+
+  /** Every id, in the order the list shows with no sort or filter: a record's neighbours follow it. */
+  private List<Long> idsInListOrder() {
+    String entity = newEntity().getClass().getSimpleName();
+    return entityManager
+        .createQuery(
+            "select e.id from " + entity + " e order by e." + querySpec().defaultSort() + ", e.id", Long.class)
+        .getResultList();
   }
 
   @Operation(summary = "Create", description = "Requires the write API key.")
@@ -161,14 +179,14 @@ public abstract class CrudController<E, D> {
    * page 1. So a request that names no order still gets one.
    */
   private Sort sortOf(String sort, QuerySpec spec) {
-    if (sort == null || sort.isBlank()) return Sort.by(spec.defaultSort());
+    if (sort == null || sort.isBlank()) return Sort.by(spec.defaultSort()).and(Sort.by("id"));
     String[] parts = sort.split(",");
     Sort.Direction direction =
         parts.length > 1 && parts[1].trim().equalsIgnoreCase("desc")
             ? Sort.Direction.DESC
             : Sort.Direction.ASC;
     String field = parts[0].trim();
-    if (field.isEmpty()) return Sort.by(spec.defaultSort());
+    if (field.isEmpty()) return Sort.by(spec.defaultSort()).and(Sort.by("id"));
     return Sort.by(direction, sortAliases().getOrDefault(field, field)).and(Sort.by("id"));
   }
 
