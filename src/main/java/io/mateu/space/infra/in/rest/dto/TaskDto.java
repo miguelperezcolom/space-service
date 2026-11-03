@@ -17,4 +17,6 @@ public record TaskDto(
     Integer estimateDays,
     Integer progress,
     String description,
+    /** The card's place in its board column (ascending, decimal). Absent on a write = unchanged. */
+    Double boardOrder,
     String url) {}

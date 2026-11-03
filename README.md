@@ -82,8 +82,15 @@ so a table renders without a request per row.
 | `GET /api/spacecraft/{id}/components/tree` | one spacecraft's breakdown |
 | `GET /api/search?search=mars[&kind=MISSION,BODY]` | one search over missions, astronauts, spacecraft, bodies and launch sites; each hit carries the `route` that opens it (`bodies/6`) |
 | `GET /api/stats` | counts and chart series: launches per decade and year, missions by status/type/program/destination, budget per year and program, tasks by status |
-| `POST /api/tasks/{id}/move?status=DONE` | move a card to another column (sets the progress a status implies) |
+| `POST /api/tasks/{id}/move?status=DONE&boardOrder=1500.5` | move a card: to another column (sets the progress a status implies) and, with `boardOrder`, to a place in it |
 | `GET /api/credits` | every photograph, with its credit and source page |
+
+**Board order.** Each task carries `boardOrder`, a decimal giving its place in its board column
+(ascending). The seed numbers every column by due date, 1000 apart; a board move writes the midpoint of
+the card's new neighbours (e.g. `1500.5`), so nothing is renumbered. `GET /api/tasks?sort=boardOrder`
+returns the cards in board order. A write that sends no `boardOrder` (an edit form) keeps the card where
+it is; a new card, or a move to another column that names no place, goes to the end of the column. This
+is what Mateu's Kanban `orderField` reads and writes.
 
 ## Writing
 
