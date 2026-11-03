@@ -96,6 +96,7 @@ public class SpaceSeeder implements ApplicationRunner {
     forEach("missions", n -> missionById.put(id(n), missions.save(mission(n))));
     forEach("launches", n -> launches.save(launch(n)));
     forEach("tasks", n -> tasks.save(task(n)));
+    numberBoardColumns();
     forEach("budgets", n -> budgets.save(budget(n)));
 
     log.info(
@@ -239,6 +240,27 @@ public class SpaceSeeder implements ApplicationRunner {
     t.setProgress(integer(n, "progress"));
     t.setDescription(text(n, "description"));
     return t;
+  }
+
+  /**
+   * Each board column numbered by due date (then id), 1000 apart, so a dropped card can always land
+   * between two neighbours. Deterministic: the same seed gives the same board.
+   */
+  private void numberBoardColumns() {
+    var byStatus = new java.util.TreeMap<String, java.util.List<MissionTask>>();
+    for (MissionTask t : tasks.findAll()) {
+      byStatus.computeIfAbsent(String.valueOf(t.getStatus()), k -> new java.util.ArrayList<>()).add(t);
+    }
+    for (var column : byStatus.values()) {
+      column.sort(
+          java.util.Comparator.comparing(
+                  MissionTask::getDueDate, java.util.Comparator.nullsLast(java.util.Comparator.naturalOrder()))
+              .thenComparing(MissionTask::getId));
+      for (int i = 0; i < column.size(); i++) {
+        column.get(i).setBoardOrder((i + 1) * io.mateu.space.infra.in.rest.TasksController.ORDER_STEP);
+      }
+      tasks.saveAll(column);
+    }
   }
 
   private BudgetLine budget(JsonNode n) {
