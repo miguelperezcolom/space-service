@@ -85,6 +85,10 @@ so a table renders without a request per row.
 | `POST /api/tasks/{id}/move?status=DONE&boardOrder=1500.5` | move a card: to another column (sets the progress a status implies) and, with `boardOrder`, to a place in it |
 | `GET /api/credits` | every photograph, with its credit and source page |
 
+**Neighbours.** `GET /api/<collection>/{id}` also returns `previousId` and `nextId`: the rows beside it
+in the list's default order (the same one a list with no `sort` returns), null at either end. They
+ignore any filter, because a single read knows nothing about one.
+
 **Board order.** Each task carries `boardOrder`, a decimal giving its place in its board column
 (ascending). The seed numbers every column by due date, 1000 apart; a board move writes the midpoint of
 the card's new neighbours (e.g. `1500.5`), so nothing is renumbered. `GET /api/tasks?sort=boardOrder`
